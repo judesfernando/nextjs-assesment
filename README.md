@@ -54,7 +54,10 @@ Simple footer used for the application.
 This is in the homepage and it will load 5 random cocktails to the page when the page loads and the refresh button will load a fresh set of random cocktails. The component has been written in a way the count (5) can be customised. Each cocktail will show the image, category and name
 
 #### Search page
-This page will handle the search functionality and it will give results based on a query for cocktail names. 
+This page will handle the search functionality and it will give results based on a query for cocktail names. Each cocktail has a favourite button that you choose to add to the favourite list.  
+
+#### Favourites page
+This page will show all the items that was added to to the favourite list. Also each item will display a button to remove an item from the favourite list. 
 
 ### Other Features
 
