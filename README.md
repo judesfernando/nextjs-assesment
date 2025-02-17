@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Front-end Code Challenge - Cocktail Wiki
 
-## Getting Started
+This nextjs app is a simple web application to show cocktails from thecocktaildb.com
 
-First, run the development server:
+### Installing & Running the app
+System Requirements : Please refer to this page https://nextjs.org/docs/app/getting-started/installation#system-requirements 
 
+After you download the code to your computer, install dependancies with following command
+```bash
+npm install
+# or
+yarn install
+```  
+
+To run the project in development mode   
 ```bash
 npm run dev
 # or
 yarn dev
+```  
+To run tests in the project
+```bash
+npm run test
 # or
-pnpm dev
-# or
-bun dev
-```
+yarn test
+```    
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## About the project
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3rd Party libraries, tools used
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Tailwind & DaisyUI used for frontend styling and UI**
+https://tailwindcss.com/
+https://daisyui.com/components/
 
-## Learn More
+**For testing** 
+Jest testing framework and React testing library used. 
 
-To learn more about Next.js, take a look at the following resources:
+**Icons**
+Icons used from google material icon library and a custom Icon component has been implemented using an SVG icon sprite. 
+https://fonts.google.com/icons
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Logo**
+Adobe illustrator was used to design a Simple logo and favicon for the project and https://favicon.io used to generate the favicon files. 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Features
+**Navigation**
+A responsive navigation has been implemented with brand logo and link to favourites page and search form. On mobile, the navigation links are shown as icons where favourite icon linked to the favourites page and search icon will display the search form. 
 
-## Deploy on Vercel
+**Footer**   
+Simple footer used for the application. 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### Random Cocktails Component
+This is in the homepage and it will load 5 random cocktails to the page when the page loads and the refresh button will load a fresh set of random cocktails. The component has been written in a way the count (5) can be customised. Each cocktail will show the image, category and name
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+#### Search page
+This page will handle the search functionality and it will give results based on a query for cocktail names. 
+
+### Other Features
+
+ - Fully responsive
+ - Dark mode/Light mode based on device mode ( automatic )
